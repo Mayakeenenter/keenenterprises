@@ -7,13 +7,13 @@ import OurServices from "../../component/OurServices/OurServices";
 import Pricing from "../../component/Pricing/Pricing";
 import Slider from "../../component/Slider/Slider";
 import Values from "../../component/Values/Values";
-import { Helmet, HelmetProvider } from "react-helmet-async";
+
 
 export default function Home() {
   return (
     <>
-      <HelmetProvider>
-        <Helmet>
+      
+        
           <title>
             Smart Real Estate & CRM Solutions| home | Keen Enterprises
           </title>
@@ -25,7 +25,7 @@ export default function Home() {
             name="keywords"
             content="Keen Enterprises, Real Estate CRM, Bitrix24 Partner UAE, Business Automation , Real Estate Technology Solutions, Digital Transformation"
           />
-        </Helmet>
+  
         <Hero />
         <OurServices />
         <Values />
@@ -50,7 +50,7 @@ export default function Home() {
         <InnovationTools />
         <Slider />
         <Outlet />
-      </HelmetProvider>
-    </>
+      </>
+    
   );
 }

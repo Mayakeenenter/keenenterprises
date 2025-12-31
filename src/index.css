@@ -1,59 +1,58 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    line-height: 1.6;
-     font-family: "Roboto", sans-serif;
-}
 /* Robot font */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: 1.6;
+  font-family: "Roboto", sans-serif;
+}
 
 :root {
-    --bg-color: #ffffff;
-    --text-color: #000000;
-    --white: #fff;
-    --black: #000;
-    --gray: #3f3f50;
-    --gold: #fcb900;
-    --pad: 0px 140px;
+  --bg-color: #ffffff;
+  --text-color: #000000;
+  --white: #fff;
+  --black: #000;
+  --gray: #3f3f50;
+  --gold: #fcb900;
+  --pad: 0px 140px;
 }
 
 body.dark-mode {
-    --bg-color: #1a1a1a; 
-    --text-color: #ffffff; 
-    --white: #121212; 
-    --black: #ffffff;
-    --gray: #e0e0e0;
+  --bg-color: #1a1a1a;
+  --text-color: #ffffff;
+  --white: #121212;
+  --black: #ffffff;
+  --gray: #e0e0e0;
 }
 
 body {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
-
-
 
 @media (max-width: 1400px) {
-    :root {
-        --pad: 0px 50px;
-    }
+  :root {
+    --pad: 0px 50px;
+  }
 }
 @media (max-width: 500px) {
-    :root {
-        --pad: 0px 20px;
-    }
+  :root {
+    --pad: 0px 20px;
+  }
 }
 
-.loader{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99999999;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(255, 255, 255, 0.884)
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 99999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.884);
 }

@@ -10,7 +10,6 @@
   z-index: 1000;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   background-color: transparent;
-
   .title {
     text-decoration: none;
     color: var(--black);
@@ -39,12 +38,12 @@
   .icon-bar {
     color: var(--white);
   }
-  .list-link{
+  .list-link {
     .contact {
-    a {
-      color: var(--gold);
+      a {
+        color: var(--gold);
+      }
     }
-  }
   }
   .list-link svg {
     color: var(--white) !important;
