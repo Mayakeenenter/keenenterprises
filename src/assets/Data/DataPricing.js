@@ -447,3 +447,21 @@ export   const imgslider2 = [
       lazy: "lazy",
     },
   ];
+
+export   const imgslider3 = [
+    {
+      img: "/slider3/صورة1.webp",
+      alt: "information about bitrix",
+      lazy: "lazy",
+    },
+    {
+       img: "/slider3/صورة2.webp",
+      alt: "information about bitrix",
+      lazy: "lazy",
+    },
+    {
+       img: "/slider3/صورة3.webp",
+      alt: "information about bitrix",
+      lazy: "lazy",
+    },
+  ];

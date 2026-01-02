@@ -16,7 +16,11 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 function Footer() {
    const location = useLocation()
   const isLocation = location.pathname === "/bitrix" || location.pathname === "/ziwo"
-  return (
+  const islocation3 = location.pathname === "/informationBitrix24"
+    const isLocation2 =
+    location.pathname === "/service" ||
+    location.pathname === "/propertyfinder";
+    return (
     <footer>
       <section className="footer">
         <img src="/Keen-Logo2-B.webp" alt="logo" />
@@ -34,7 +38,7 @@ function Footer() {
         </div>
          <ul className="list-link">
                   <li>
-                    <NavLink to={"/"}>
+                    <NavLink to={"/"} className={`${islocation3 ? 'color-gold' : ''}`}>
                       home
                     </NavLink>
                   </li>
@@ -63,7 +67,7 @@ function Footer() {
                       </li>
                     </ul>
                   </li>
-                  <li className={`li-products ${isLocation ? "prodact-active" : ""}`}>
+                  <li className={`li-products ${isLocation2 ? "prodact-active" : ""}`}>
                     service
                     <FontAwesomeIcon icon={faAngleDown} />
                     <ul className="new-list">

@@ -11,12 +11,10 @@ function Slider({ slider, one }) {
         modules={[Pagination, Autoplay]}
         className="mySwiper"
         loop={true}
-        {...(one && {
-          autoplay: {
+         autoplay = {{
             delay: 2500,
             disableOnInteraction: false,
-          },
-        })}
+          }}
         {...(one && {
           breakpoints: {
             0: {

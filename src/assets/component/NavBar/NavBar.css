@@ -203,6 +203,9 @@ nav {
     transform: translateX(1.5em);
   }
 }
+.color-gold {
+  color: var(--gold) !important;
+}
 @media (max-width: 1500px) {
   .Nav {
     flex-direction: column;

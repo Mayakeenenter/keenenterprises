@@ -19,12 +19,12 @@ function NavBar() {
   });
   const [showSearch, setShowSearch] = useState(false);
   const location = useLocation();
-  const location2 = useLocation();
   const isLocation =
     location.pathname === "/bitrix" || location.pathname === "/ziwo";
   const isLocation2 =
-    location2.pathname === "/service" ||
-    location2.pathname === "/propertyfinder";
+    location.pathname === "/service" ||
+    location.pathname === "/propertyfinder";
+    const islocation3 = location.pathname === "/informationBitrix24"
   const [open, setopn] = useState(false);
   const [mobile, sermobile] = useState(false);
   const [change, setchange] = useState(false);
@@ -89,7 +89,7 @@ function NavBar() {
       <nav>
         <ul className={`list-link ${showmenu ? "open" : ""}`}>
           <li>
-            <NavLink to={"/"} onClick={toggleMenu}>
+            <NavLink to={"/"} onClick={toggleMenu} className={`${islocation3 ? 'color-gold' : ''}`}> 
               home
             </NavLink>
           </li>
