@@ -206,7 +206,7 @@ nav {
 .color-gold {
   color: var(--gold) !important;
 }
-@media (max-width: 1500px) {
+@media (max-width: 1400px) {
   .Nav {
     flex-direction: column;
   }
