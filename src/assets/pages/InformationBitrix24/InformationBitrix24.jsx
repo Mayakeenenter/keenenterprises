@@ -16,7 +16,7 @@ export default function InformationBitrix24() {
         <Slider
         slider={imgslider3}/>
         <CradInformationBitrix />
-        <img src="/product/صورة4.webp" alt="" />
+        <img src="/product/صورة4.webp" alt="customar services and commuinication platform" className="customar-services" />
       </div>
     </>
   );

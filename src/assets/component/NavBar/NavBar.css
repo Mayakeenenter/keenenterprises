@@ -83,7 +83,7 @@
 .list-link li a.active,
 .email:hover,
 .prodact-active {
-  color: var(--gold);
+  color: var(--gold) !important;
 }
 .list-link li a.active::after {
   content: "";
@@ -209,6 +209,7 @@ nav {
 @media (max-width: 1400px) {
   .Nav {
     flex-direction: column;
+    padding-top: 3px;
   }
 }
 

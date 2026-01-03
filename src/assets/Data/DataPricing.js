@@ -126,7 +126,7 @@ export const ZiwoCardInfo = [
   {
     Number: "03",
     title: "CRM Integration",
-    text1: "Works with tools like",
+    text1: "Works with tools like Bitrix24",
   },
   {
     Number: "04",

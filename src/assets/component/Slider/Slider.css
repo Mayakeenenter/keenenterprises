@@ -6,8 +6,13 @@
 .swiper {
   width: 100%;
   height: 100%;
+ overflow-y: visible !important;
+  overflow-x: clip !important;
 }
 
+.swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-horizontal.swiper-pagination-bullets {
+  top: 200px !important;
+}
 .swiper-slide {
   text-align: center;
   font-size: 18px;

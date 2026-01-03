@@ -27,6 +27,9 @@
     font-size: 18px;
   }
 }
+.customar-services{
+  width: 100%;
+}
 @media (max-width:1500px) {
   .infoBitrix{
     padding-top: 250px;
