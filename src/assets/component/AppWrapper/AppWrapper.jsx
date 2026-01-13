@@ -1,6 +1,6 @@
 // AppWrapper.jsx
 import { useEffect, useState } from "react";
-import { RouterProvider, ScrollRestoration } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 import SpinnerLoading from "../SpinnerLoading/SpinnerLoading";
 
 export default function AppWrapper({ router }) {
