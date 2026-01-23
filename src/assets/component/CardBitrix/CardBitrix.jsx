@@ -1,6 +1,7 @@
 import { NavLink } from "react-router-dom";
 import "./CardBitrix.css";
 import { motion } from "framer-motion";
+
 export default function CardBitrix({ one, img, partOne, partTwo, partThree }) {
   return (
     <div className={`card-bitrix ${one ? "card-one" : "card-two"} `}>

@@ -4,6 +4,7 @@ import ZiwoCard from "../../component/ZiwoCard/ZiwoCard";
 import ZiwoCenter from "../../component/ZiwoCenter/ZiwoCenter";
 import ZiwoIntegration from "../../component/ZiwoIntegration/ZiwoIntegration";
 import "./Ziwo.css";
+import { motion } from "framer-motion";
 
 function Ziwo() {
   return (
@@ -19,9 +20,14 @@ function Ziwo() {
       />
 
       <div>
-        <div className="mt-product">
+        <motion.div 
+          className="mt-product"
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+        >
           <CardLine text={"Calls Center Partners"} />
-        </div>
+        </motion.div>
         <ZiwoCenter />
         <ZiwoCard />
         <ZiwoIntegration />

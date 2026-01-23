@@ -39,6 +39,7 @@
     width: 600px;
   }
 }
+
 @media (max-width: 1200px) {
   .card-bitrix {
     flex-direction: column;

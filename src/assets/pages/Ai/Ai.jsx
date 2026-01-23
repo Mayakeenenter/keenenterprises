@@ -3,7 +3,8 @@ import "./Ai.css";
 import NavBar from "../../component/NavBar/NavBar";
 import CardLine from "../../component/CardLine/CardLine";
 import { Link } from "react-router-dom";
-
+import Lottie from "lottie-react";
+import animationData from "../../Data/Guy talking to Robot _ AI Help.json";
 function Ai() {
   // البيانات الخاصة بالمميزات
   const features = [
@@ -49,10 +50,11 @@ function Ai() {
       <NavBar />
       <main>
         <div className="mt-product">
-          <CardLine text={"AI agent"} />
+          {/* <CardLine text={"AI agent"} /> */}
         </div>
         <div className="ai">
           <h1>AI Agents That Work for You — Smarter, Faster, Always On</h1>
+           <Lottie animationData={animationData} loop={true} />
         </div>
         <div className="ai-sec1">
           <div>

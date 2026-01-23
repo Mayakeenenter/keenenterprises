@@ -1,0 +1,99 @@
+.bitrix-wrapper {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 20px;
+  direction: ltr;
+}
+
+.comparison-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+}
+
+.comp-card {
+  padding: 60px 45px;
+  transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+}
+
+
+.before-card {
+  background-color: #fcfcfc;
+  border-right: 1px solid #eee;
+  color: #444;
+}
+
+
+.after-card {
+  background-color: #fcb900;
+  color: #000; 
+}
+
+.after-card:hover {
+  transform: scale(1.03);
+  z-index: 10;
+  box-shadow: 0 20px 40px rgba(252, 185, 0, 0.3);
+}
+
+.comp-card h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  margin-bottom: 25px;
+}
+
+.comp-list {
+  list-style: none;
+  padding: 0;
+}
+
+.comp-list li {
+  margin-bottom: 22px;
+  line-height: 1.5;
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  font-size: 1.1rem;
+}
+
+.check-box {
+  min-width: 24px;
+  font-weight: bold;
+}
+
+.description-lead{
+    margin-top: 25px;
+    font-size: 18px;
+    font-weight: 700;
+}
+.before-card .icon-box { color: #d1d1d1; }
+.after-card .icon-box { color: #000; }
+
+.badge-flat-fee {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 12px 24px;
+  background: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .comparison-grid {
+    grid-template-columns: 1fr;
+  }
+  .before-card {
+    border-right: none;
+    border-bottom: 2px solid #eee;
+  }
+  .after-card:hover {
+    transform: none;
+  }
+}

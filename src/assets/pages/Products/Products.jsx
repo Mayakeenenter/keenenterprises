@@ -3,6 +3,7 @@ import CardLine from "../../component/CardLine/CardLine";
 import CardBitrix from "../../component/CardBitrix/CardBitrix";
 import Slider from "../../component/Slider/Slider";
 import { imgslider2 } from "../../Data/DataPricing";
+import BitrixComparison from "../../component/BitrixComparison/BitrixComparison";
 
 
 function Products() {
@@ -29,6 +30,7 @@ function Products() {
       />
       <Slider
       slider={imgslider2}/>
+      <BitrixComparison/>
       <img
         src="/product/copilet.webp"
         alt=""

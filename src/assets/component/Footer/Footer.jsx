@@ -1,6 +1,4 @@
-
 import {
-  
   faAngleDown,
   faBriefcase,
   faChartSimple,
@@ -8,19 +6,30 @@ import {
   faHouseChimneyWindow,
   faMagnifyingGlass,
   faPhoneVolume,
-  
 } from "@fortawesome/free-solid-svg-icons";
 import "./Footer.css";
-import { NavLink, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
+import { faFacebook, faInstagram } from "@fortawesome/free-brands-svg-icons";
 function Footer() {
-   const location = useLocation()
-  const isLocation = location.pathname === "/bitrix" || location.pathname === "/ziwo"
-  const islocation3 = location.pathname === "/informationBitrix24"
-    const isLocation2 =
-    location.pathname === "/service" ||
-    location.pathname === "/propertyfinder";
-    return (
+  const location = useLocation();
+  const isLocation =
+    location.pathname === "/bitrix" || location.pathname === "/ziwo";
+  const islocation3 = location.pathname === "/informationBitrix24";
+  const isLocation2 =
+    location.pathname === "/service" || location.pathname === "/propertyfinder";
+  const links = [
+    {
+      icon: <FontAwesomeIcon icon={faFacebook} />,
+      url: "https://www.facebook.com/share/16rWP9rCak/",
+    },
+    {
+      icon: <FontAwesomeIcon icon={faInstagram} className="instagram" />,
+      url: "https://www.facebook.com/share/16rWP9rCak/",
+    },
+  ];
+  return (
     <footer>
       <section className="footer">
         <img src="/Keen-Logo2-B.webp" alt="logo" />
@@ -35,78 +44,73 @@ function Footer() {
           <a href="tel:971 50 1310408" className="email">
             +971 50 1310408
           </a>
+          <ul>
+            {links.map((item, index) => (
+              <li key={index}>
+                <Link to={item.url}>
+                {item.icon}</Link>
+              </li>
+            ))}
+          </ul>
         </div>
-         <ul className="list-link">
-                  <li>
-                    <NavLink to={"/"} className={`${islocation3 ? 'color-gold' : ''}`}>
-                      home
-                    </NavLink>
-                  </li>
-                  <li className={`li-products ${isLocation ? "prodact-active" : ""}`}>
-                    products
-                    <FontAwesomeIcon icon={faAngleDown} />
-                    <ul className="new-list">
-                      <li>
-                        <FontAwesomeIcon icon={faChartSimple} />
-        
-                        <NavLink to={"/bitrix"}>
-                          Bitrix24
-                        </NavLink>
-                      </li>
-                      <li>
-                        <FontAwesomeIcon icon={faPhoneVolume} />
-                        <NavLink to={"/ziwo"} >
-                          ziwo
-                        </NavLink>
-                      </li>
-                      <li>
-                        <FontAwesomeIcon icon={faCommentDots} />
-                        <NavLink to={"/partner"} >
-                          Gupshup
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li>
-                  <li className={`li-products ${isLocation2 ? "prodact-active" : ""}`}>
-                    service
-                    <FontAwesomeIcon icon={faAngleDown} />
-                    <ul className="new-list">
-                      <li>
-                        <FontAwesomeIcon icon={faBriefcase} />
-        
-                        <NavLink to={"/service"} >
-                          Our Service
-                        </NavLink>
-                      </li>
-                      <li>
-                        <FontAwesomeIcon icon={faHouseChimneyWindow} />
-        
-                        <NavLink to={"/propertyfinder"}>
-                          Property Finder & Bayut
-                        </NavLink>
-                      </li>
-                    </ul>
-                  </li>
-                  <li>
-                    <NavLink to={"/about"} >
-                      about us
-                    </NavLink>
-                  </li>
-        
-                  <li className="contact">
-                    <NavLink to={"/contact"}>
-                      contact us
-                    </NavLink>
-                  </li>
-                  <div
-                    className="search-icon-wrapper"
-                  
-                  >
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
-                  </div>
-                </ul>
+        <ul className="list-link">
+          <li>
+            <NavLink to={"/"} className={`${islocation3 ? "color-gold" : ""}`}>
+              home
+            </NavLink>
+          </li>
+          <li className={`li-products ${isLocation ? "prodact-active" : ""}`}>
+            products
+            <FontAwesomeIcon icon={faAngleDown} />
+            <ul className="new-list">
+              <li>
+                <FontAwesomeIcon icon={faChartSimple} />
+
+                <NavLink to={"/bitrix"}>Bitrix24</NavLink>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faPhoneVolume} />
+                <NavLink to={"/ziwo"}>ziwo</NavLink>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faCommentDots} />
+                <NavLink to={"/partner"}>Gupshup</NavLink>
+              </li>
+            </ul>
+          </li>
+          <li className={`li-products ${isLocation2 ? "prodact-active" : ""}`}>
+            service
+            <FontAwesomeIcon icon={faAngleDown} />
+            <ul className="new-list">
+              <li>
+                <FontAwesomeIcon icon={faBriefcase} />
+
+                <NavLink to={"/service"}>Our Service</NavLink>
+              </li>
+              <li>
+                <FontAwesomeIcon icon={faHouseChimneyWindow} />
+
+                <NavLink to={"/propertyfinder"}>
+                  Property Finder & Bayut
+                </NavLink>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <NavLink to={"/about"}>about us</NavLink>
+          </li>
+
+          <li className="contact">
+            <NavLink to={"/contact"}>contact us</NavLink>
+          </li>
+          <div className="search-icon-wrapper">
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </div>
+        </ul>
       </section>
-      <p className="p-footer">Copyright © 2025 - All rights reserved.Powered by Keen Enterprises LLC.</p>
+      <p className="p-footer">
+        Copyright © 2025 - All rights reserved.Powered by Keen Enterprises LLC.
+      </p>
     </footer>
   );
 }

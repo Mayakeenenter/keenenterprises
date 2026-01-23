@@ -1,4 +1,3 @@
-
 import CardLine from "../../component/CardLine/CardLine";
 import Partner from "../../component/Partner/Partner";
 
@@ -33,6 +32,7 @@ function PartnerPage() {
           </p>
         </div>
       </div>
+      
     </>
   );
 }

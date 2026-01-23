@@ -1,6 +1,8 @@
 .ai {
   padding: var(--pad);
   text-align: center;
+  display: flex;
+  align-items: center;
   h1 {
     font-size: 45px;
     margin-top: 20px;
@@ -171,10 +173,14 @@
   .item-3 { bottom: 5%; right: 10%; }
   .item-4 { bottom: 5%; left: 10%; }
   .item-5 { top: 20%; left: -5%; }
+ 
 }
 
 
 @media (max-width: 991px) {
+   .ai{
+    flex-direction: column;
+  }
   .hub-container {
     height: auto;
     flex-direction: column;
@@ -215,6 +221,7 @@
   .pulse-ring {
     display: none;
   }
+
 }
 
 .ai-cta-section {
